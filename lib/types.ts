@@ -35,7 +35,11 @@ export type NewsItem = {
   sourceDomain: string;
   publishedAt: string;
   url: string;
-  impact: ImpactLevel;
+  /**
+   * Editorial impact classification. news_search does not return one, so this
+   * is only present on items that carry a classification of their own.
+   */
+  impact?: ImpactLevel;
   clusterKey: string;
 };
 

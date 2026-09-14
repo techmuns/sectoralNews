@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.wrangler/
+.env
+.env.local
+*.log
+__pycache__/
+
+# Read-only reference material, not part of the dashboard
+dashboard-skill/

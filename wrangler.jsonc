@@ -1,6 +1,9 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "sectoral-news-dashboard",
-  "main": "src/index.ts",
-  "compatibility_date": "2026-04-25"
+  "compatibility_date": "2026-04-25",
+  // Cloudflare Pages project. `npm run build` emits dist/, which carries
+  // public/_headers through verbatim; functions/_middleware.js is picked up
+  // from the repo root as the Pages Functions root middleware.
+  "pages_build_output_dir": "dist"
 }
